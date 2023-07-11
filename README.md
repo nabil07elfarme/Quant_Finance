@@ -56,7 +56,7 @@ The `pct_change()` function calculates the percentage change between consecutive
 
 ## Portfolio Optimization
 
-To optimize our portfolio, we can explore different combinations of asset allocations. We randomly select portfolio weights, ensuring that they sum up to 1. For each allocation, we calculate the portfolio return and volatility (standard deviation) using the mean daily returns and covariance matrix:
+To optimize our portfolio, we can use Monte Carlo simulation and explore different combinations of asset allocations. We randomly select portfolio weights, ensuring that they sum up to 1. For each allocation, we calculate the portfolio return and volatility (standard deviation) using the mean daily returns and covariance matrix:
 
 ```python
 num_portfolios = 10000

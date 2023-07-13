@@ -100,13 +100,12 @@ Portfolio theory provides a framework for investors to optimize their investment
 
 
 
-LinkedIn Readme File:
 
-## Stock Price Prediction using Geometric Brownian Motion (GBM) and Recurrent Neural Network (RNN)
+# Stock Price Prediction using Geometric Brownian Motion (GBM) and Recurrent Neural Network (RNN)
 
 This code demonstrates how to predict stock prices using two different approaches: Geometric Brownian Motion (GBM) and Recurrent Neural Network (RNN). The code is written in Python and utilizes popular libraries such as pandas, scikit-learn, and TensorFlow.
 
-### Geometric Brownian Motion (GBM) Model
+## Geometric Brownian Motion (GBM) Model
 
 The GBM model simulates stock price movements based on the assumption of geometric Brownian motion. It involves the following steps:
 
@@ -117,7 +116,7 @@ The GBM model simulates stock price movements based on the assumption of geometr
 5. Perform predictions by simulating future prices based on the GBM model and calculating the average.
 6. Plot the predicted prices along with the actual prices.
 
-### Recurrent Neural Network (RNN) Model
+## Recurrent Neural Network (RNN) Model
 
 The RNN model uses a neural network architecture specifically designed to capture temporal dependencies in sequential data. The implementation follows these steps:
 
@@ -130,7 +129,7 @@ The RNN model uses a neural network architecture specifically designed to captur
 7. Make predictions on the test data and inverse scale the results.
 8. Plot the predicted prices along with the actual prices.
 
-### Evaluation and Comparison
+## Evaluation and Comparison
 
 Both models are evaluated using common performance metrics: Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and Mean Absolute Error (MAE). The code calculates and displays these metrics for both the GBM and RNN models in a table format.
 

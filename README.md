@@ -98,3 +98,45 @@ In this code, we plot the volatility on the x-axis, return on the y-axis, and us
 
 Portfolio theory provides a framework for investors to optimize their investments by balancing risk and return. By diversifying across different assets, investors can potentially achieve higher returns while minimizing risk. In this article, we explored the concepts of portfolio theory and demonstrated how to apply them using Python. By analyzing historical stock data, calculating returns and covariances, and optimizing portfolios, investors can make informed decisions based on data-driven insights.
 
+
+
+LinkedIn Readme File:
+
+## Stock Price Prediction using Geometric Brownian Motion (GBM) and Recurrent Neural Network (RNN)
+
+This code demonstrates how to predict stock prices using two different approaches: Geometric Brownian Motion (GBM) and Recurrent Neural Network (RNN). The code is written in Python and utilizes popular libraries such as pandas, scikit-learn, and TensorFlow.
+
+### Geometric Brownian Motion (GBM) Model
+
+The GBM model simulates stock price movements based on the assumption of geometric Brownian motion. It involves the following steps:
+
+1. Load historical stock price data from Yahoo Finance using the `pandas_datareader` library.
+2. Define a function to simulate the next-day price based on the GBM equation.
+3. Specify the parameters for the model, such as the number of predictions, number of simulations, and window size.
+4. Prepare the training data by extracting the relevant price data and applying logarithmic transformations.
+5. Perform predictions by simulating future prices based on the GBM model and calculating the average.
+6. Plot the predicted prices along with the actual prices.
+
+### Recurrent Neural Network (RNN) Model
+
+The RNN model uses a neural network architecture specifically designed to capture temporal dependencies in sequential data. The implementation follows these steps:
+
+1. Load historical stock price data from Yahoo Finance.
+2. Scale the data between 0 and 1 using the `MinMaxScaler` from scikit-learn.
+3. Split the data into training and testing sets.
+4. Prepare the data for the RNN model by creating sequences of input-output pairs.
+5. Build an RNN model using the Keras API, consisting of LSTM layers and a dense output layer.
+6. Compile and train the RNN model on the training data.
+7. Make predictions on the test data and inverse scale the results.
+8. Plot the predicted prices along with the actual prices.
+
+### Evaluation and Comparison
+
+Both models are evaluated using common performance metrics: Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and Mean Absolute Error (MAE). The code calculates and displays these metrics for both the GBM and RNN models in a table format.
+
+The purpose of this code is to demonstrate the application of the GBM and RNN models for stock price prediction. You can modify and adapt the code to work with different datasets and experiment with various model configurations.
+
+To run the code, make sure to have the required libraries installed and provide the necessary inputs such as the path to the stock data CSV file and the desired parameters for the models.
+
+Feel free to use this code as a starting point for your own stock price prediction projects and explore further improvements and extensions to the models.
+
